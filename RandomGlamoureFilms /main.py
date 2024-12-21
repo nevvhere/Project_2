@@ -9,7 +9,7 @@ class EntertainmentPicker:
         self.watched_series = []
 
     def get_random_movie(self, genre):
-        """selects random movie from the list, excluding watched movies"""
+        """выбирает рандомный фильм из списка, исключая просмотренные"""
         if genre not in movies:
             raise InvalidGenreError(f"Genre '{genre}' not found")
         available_movies = [movie for movie in movies[genre] if movie not in self.watched_movies]
@@ -19,7 +19,7 @@ class EntertainmentPicker:
             return "Вы посмотрели все фильмы этого жанра"
 
     def get_random_series(self, genre):
-        """selects random series from the list, excluding watched series"""
+        """выбирает рандомный сериал из списка, исключая просмотренне"""
         if genre not in series:
             raise InvalidGenreError(f"Genre '{genre}' not found")
         available_series = [serie for serie in series[genre] if serie not in self.watched_series]
@@ -29,7 +29,7 @@ class EntertainmentPicker:
             return "Вы посмотрели все сериалы этого жанра"
 
     def show_watched_movies(self):
-        """prints list of watched movies"""
+        """печатает лист просмотренных фильмов"""
         if self.watched_movies:
             print("Просмотренные фильмы:")
             for movie in self.watched_movies:
@@ -38,7 +38,7 @@ class EntertainmentPicker:
             print("Сначала надо посмотреть фильм:)")
 
     def show_watched_series(self):
-        """prints list of watched series"""
+        """печатает лист просмотреннх сериалов"""
         if self.watched_series:
             print("Просмотренные сериалы:")
             for serie in self.watched_series:
