@@ -1,5 +1,5 @@
 import random
-from movies_series import movies
+from movies import movies
 from series import series
 from exceptions import InvalidGenreError
 
