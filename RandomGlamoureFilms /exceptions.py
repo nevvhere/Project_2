@@ -1,0 +1,2 @@
+class InvalidGenreError(Exception):
+    pass
