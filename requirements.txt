@@ -1,4 +1,4 @@
-random = 
+random = 3.12
 movies = 1.1
 series = 1.1
 exeptions = 1.1
